@@ -3874,6 +3874,9 @@ footer {
 	font-size: 0.875rem;
 	margin-bottom: 5px;
 }
+.feed-color{
+	background-color: #fff; color:#000;
+}
 
 .fav {
 	display: -ms-flexbox;
@@ -3919,41 +3922,7 @@ footer {
 	font-weight: 500;
 	text-align: center;
 }
-.link-btn1 {
-    background: #24294C;
-    border: 2px;
-    border-radius: 15px;
-    color: #FFFFFF;
-	margin-right: 40px;
-    font-size: 0.7em;
-    font-weight: normal;
-	padding: 18px 65px;
-	padding-left: 80px;
-	padding-right: 80px;
-	text-align: center;
-}
-.link-btn1:hover {
-	background-color: transparent;
-	border: 2px solid #24294C;
-	color: #24294C;
-	text-decoration: none;
-}
-.link-btn2 {
-    background: transparent;
-    border: 2px solid #24294C;
-    border-radius: 15px;
-    color: #24294C;
-    font-size: 0.7em;
-    font-weight: normal;
-	padding: 18px 60px;
-	text-align: center;
-}
-.link-btn2:hover {
-	background-color: #24294C;
-	text-decoration: none;
-
-}
-.link-btn3 {
+.twitter-btn {
     background:transparent;
     border: 2px solid #3b94d9;
     border-radius: 20px;
@@ -3965,11 +3934,30 @@ footer {
 	padding-right: 70px;
 	text-align: center;
 }
-.link-btn3:hover {
-	background-color: #24294C;
+.twitter-btn:hover {
+	background-color: #3b94d9;
 	text-decoration: none;
 }
 
+/*RESPONSIVE TWITTER BTN FOR MOBILE*/
+
+@media only screen and (max-width: 900px) {	
+	.twitter-btn {
+		background:transparent;
+		border: 2px solid #3b94d9;
+		border-radius: 20px;
+		color: #3b94d9;
+		margin-left: -10px;
+		margin-right: 10px;
+		font-size: 0.7em;
+		padding: 15px 6px;
+		text-align: center;
+	}
+	.twitter-btn:hover {
+		background-color: #3b94d9;
+		text-decoration: none;
+	}	
+}
 
 /* button fixes by nedy sunday 21:14 */
 .custom-btn{
@@ -4011,61 +3999,6 @@ footer {
 /* button fixes end here */
 
 
-/*RESPONSIVE BUTTONS FOR MOBILE*/
-
-
-
-/*EXTRA SMALL DEVICES*/
-@media only screen and (max-width: 900px) {
-	.link-btn1 {
-		background: #24294C;
-		border: 1px;
-		border-radius: 15px;
-		color: #FFFFFF;
-		margin-left: 0px;
-		margin-right: 5px;
-		font-size: 0.7em;
-		font-weight: normal;
-		padding: 15px 35px;
-		text-align: center;
-	}
-	.link-btn1:hover {
-		background-color: transparent;
-		border: 2px solid #24294C;
-		color: #24294C;
-		text-decoration: none;
-	}
-	.link-btn2 {
-		background: transparent;
-		border: 2px solid #24294C;
-		border-radius: 15px;
-		color: #24294C;
-		font-size: 0.7em;
-		font-weight: normal;
-		padding: 15px 10px;
-		text-align: center;
-	}
-	.link-btn2:hover {
-		background-color: #24294C;
-		text-decoration: none;
-	}
-	.link-btn3 {
-		background:transparent;
-		border: 2px solid #3b94d9;
-		border-radius: 20px;
-		color: #3b94d9;
-		margin-left: -10px;
-		margin-right: 10px;
-		font-size: 0.7em;
-		padding: 15px 6px;
-		text-align: center;
-	}
-	.link-btn3:hover {
-		background-color: #24294C;
-		text-decoration: none;
-	}
-}
-
 .event-host {
 	padding-bottom: 60px;
 	background-color: #fff;
@@ -4080,6 +4013,7 @@ footer {
 }
 
 .twitter-feed {
+	background-color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;

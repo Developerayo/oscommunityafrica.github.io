@@ -5,9 +5,10 @@
 */
 
 	
-	
 
 (function($) {
+
+	
 
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
@@ -33,7 +34,12 @@
 */
 	  
 
-	  
+	"use strict";
+
+    // PRE LOADER
+    $(window).load(function() {
+        $('#OSCA').fadeOut(4000); // set duration in brackets    
+    });  
 
 	  
 	  
