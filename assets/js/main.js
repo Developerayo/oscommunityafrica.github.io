@@ -18,7 +18,8 @@
 		xsmall: '(max-width: 480px)',
 		xxsmall: '(max-width: 360px)'
 	});
-  /*
+
+	/* Pre-loader */
 	document.onreadystatechange = function () {
 		var state = document.readyState
 		if (state == 'interactive') {
@@ -31,18 +32,7 @@
 			},5000);
 		}
 	  }
-*/
-	  
 
-	"use strict";
-
-    // PRE LOADER
-    $(window).load(function() {
-        $('#OSCA').fadeOut(4000); // set duration in brackets    
-    });  
-
-	  
-	  
 
 	
 	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
