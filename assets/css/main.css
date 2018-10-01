@@ -3936,6 +3936,7 @@ footer {
 }
 .twitter-btn:hover {
 	background-color: #3b94d9;
+	color: #fff!important;
 	text-decoration: none;
 }
 
@@ -3955,6 +3956,7 @@ footer {
 	}
 	.twitter-btn:hover {
 		background-color: #3b94d9;
+		color: #fff!important;
 		text-decoration: none;
 	}	
 }
