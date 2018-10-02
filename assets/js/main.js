@@ -17,7 +17,8 @@
 		xsmall: '(max-width: 480px)',
 		xxsmall: '(max-width: 360px)'
 	});
-  /*
+
+/*pre-loader */
 	document.onreadystatechange = function () {
 		var state = document.readyState
 		if (state == 'interactive') {
@@ -29,13 +30,7 @@
 			   document.getElementById('load').style.visibility="visible";
 			},5000);
 		}
-	  }
-*/
-	  
-
-	  
-
-	  
+	  }	  
 	  
 
 	
