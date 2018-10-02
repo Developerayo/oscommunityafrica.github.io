@@ -17,10 +17,15 @@
 		xsmall: '(max-width: 480px)',
 		xxsmall: '(max-width: 360px)'
 	});
-  /*
-	document.onreadystatechange = function () {
-		var state = document.readyState
-		if (state == 'interactive') {
+  
+	
+	  
+
+	  
+
+	  document.onreadystatechange = function () {
+				var state = document.readyState
+			if (state == 'interactive') {
 			 document.getElementById('load').style.visibility="hidden";
 		} else if (state == 'complete') {
 			setTimeout(function(){
@@ -30,12 +35,7 @@
 			},5000);
 		}
 	  }
-*/
-	  
 
-	  
-
-	  
 	  
 
 	
