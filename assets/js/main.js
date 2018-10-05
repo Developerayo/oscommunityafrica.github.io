@@ -17,24 +17,52 @@
 		xsmall: '(max-width: 480px)',
 		xxsmall: '(max-width: 360px)'
 	});
-  /*
-	document.onreadystatechange = function () {
+	;
+	  
+	
+  	document.onreadystatechange = function () {
 		var state = document.readyState
 		if (state == 'interactive') {
 			 document.getElementById('load').style.visibility="hidden";
 		} else if (state == 'complete') {
-			setTimeout(function(){
-			   document.getElementById('interactive');
+			setTimeout(function(){							
+		   document.getElementById('complete');
 			   document.getElementById('OSCA').style.visibility="hidden";
 			   document.getElementById('load').style.visibility="visible";
-			},5000);
-		}
-	  }
-*/
-	  
+			},1000);
+		
+		} };
+ 
+			var timer;
 
-	  
+			function showLoading() {
+				timer = setTimeout(function(){
+									  $('load').show(0);
+								   }, 1000);
+			}
+			
+			function hideLoading() {
+				if(timer){
+					clearTimeout(timer);
+				}
+				$("OSCA").hide();
+			}
 
+
+var appCache = window.applicationCache;
+appCache.addEventListener('updateready', function(e) {
+  if (appCache.status == appCache.UPDATEREADY) {
+    // The new cache has been downloaded. Prompt the user
+    // to see if he wants to refresh his page now.
+
+    var msg = 'A new version of the app has been downloaded.\n'
+    msg += 'Click OK to use it now or Cancel to continue using the current version.'
+
+    if (window.prompt(msg)) {
+      window.location.reload();
+    }
+  }
+}, false);
 	  
 	  
 

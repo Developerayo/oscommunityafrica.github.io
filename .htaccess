@@ -6,3 +6,42 @@ Header set Cache-Control "max-age=4838400, public"
 Header set Cache-Control "max-age=4838400, private"
 </FilesMatch>
 </IfModule>
+
+CACHE MANIFEST
+# v1 2018-10-2
+# This is another comment
+index.html
+about-us.html
+community.html
+main.css
+main.js
+osca1.png
+osca.png
+oscaa.png
+
+
+# Use from network if available
+NETWORK:
+network.html
+
+# Fallback content
+FALLBACK:
+osca.png
+
+
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType osca.png "access plus 1 year"
+ExpiresByType osca1.png "access plus 1 year"
+ExpiresByType oscaa.png "access plus 1 year"
+ExpiresByType assets/css/main.css "access plus 1 month"
+ExpiresByType  assets/js/main.js"access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 7 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+
