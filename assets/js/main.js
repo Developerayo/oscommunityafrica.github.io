@@ -18,7 +18,8 @@
 		xxsmall: '(max-width: 360px)'
 	});
 	;
-	  
+
+	/*
 	
   	document.onreadystatechange = function () {
 		var state = document.readyState
@@ -26,7 +27,7 @@
 			 document.getElementById('load').style.visibility="hidden";
 		} else if (state == 'complete') {
 			setTimeout(function(){							
-		   document.getElementById('complete');
+		   document.getElementById('interactive');
 			   document.getElementById('OSCA').style.visibility="hidden";
 			   document.getElementById('load').style.visibility="visible";
 			},1000);
@@ -47,7 +48,16 @@
 				}
 				$("OSCA").hide();
 			}
+*/
 
+			document.onreadystatechange = function () {
+				var state = document.readyState
+				if (state == 'complete') {
+					   document.getElementById('interactive');
+					   document.getElementById('load').style.visibility="visible";
+					   document.getElementById('OSCA').style.visibility="hidden";
+				}
+			  }
 
 var appCache = window.applicationCache;
 appCache.addEventListener('updateready', function(e) {
