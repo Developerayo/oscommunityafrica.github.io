@@ -1,3 +1,4 @@
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![fb_img_1537794640977](https://user-images.githubusercontent.com/32304161/45957843-e8582a00-c00d-11e8-9b47-c4055ed661c8.jpg)
 # Open Source Community Africa - O.S.C.A
 
 Open Source Community Africa is a community of open source advocates and contributors across Africa, with the sole aim of growing and building the spirit of open source development and contribution through an increase in the rate of credible contributions towards maintaining open source technologies by African software developers, designers and all career fields in technology both on a local and global scale.
@@ -6,8 +7,6 @@ Open Source Community Africa is a community of open source advocates and contrib
 As a community, we intend to promote the culture of open source contribution amongst African developer and also strongly advocate for the development of free and open source software by giving people the opportunity and technical empowerment to make credible contributions towards building and maintaining open source projects/softwares.
 
 Get started and know more about us here [www.oscafrica.org](https://oscafrica.org)
-![fb_img_1537794640977](https://user-images.githubusercontent.com/32304161/45957843-e8582a00-c00d-11e8-9b47-c4055ed661c8.jpg)
-
 
 ## Code of Conduct:
 To ensure a sane and healthy environment for all maintainers, contributors, reviewers and community members in general, we adhere strictly to our [code of conduct](src/CODE_OF_CONDUCT.md) and also urge all members to.
